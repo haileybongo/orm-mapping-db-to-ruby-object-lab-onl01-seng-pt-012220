@@ -49,5 +49,6 @@ class Student
     new_song  # return the newly created instance
   end
   
-  def self.find_by_name
+  def 
+    
 end
