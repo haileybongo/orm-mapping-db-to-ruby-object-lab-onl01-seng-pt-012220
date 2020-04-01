@@ -63,13 +63,13 @@ class Student
       sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = "9th"
+      WHERE grade = ?
       LIMIT 1
     SQL
  
     DB[:conn].execute(sql, "9th").map do |row|
       self.new_from_db(row)
-    end.first
+    end
   end
     
 end
