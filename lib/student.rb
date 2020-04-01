@@ -49,7 +49,7 @@ class Student
     new_song  # return the newly created instance
   end
   
-  def 
+  def self.find_by_name
       sql = <<-SQL
       SELECT *
       FROM songs
